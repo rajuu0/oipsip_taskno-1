@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/x-icon" href="icons8-s-16.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Product Landing Page</title>
+</head>
+<body id="home">
+ <nav>
+   <div class="logo">Saftex Vpn</div>
+   <!-- toggle menu button -->
+   <span class="menubtn" onclick="openNav()">&#9776;</span>
+ 
+   <div class="navLinks">
+     <ul>
+       <li><a href="#home">Home</a></li>
+       <li><a href="C:\Users\rajuboii\Documents\web devlopment\p1\about.html">About</a></li>
+       
+      
+     </ul>
+   </div>
+ </nav>
+   <!-- responsive side navbar -->
+   <div class="sideNav" id="sidenav">
+     <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+     <a href="#">Home</a>
+     <a href="#">About</a>
+     
+     <a href="#">Contact</a>
+      </a>
+   </div>
+   
+   <!-- Header content with banner image -->
+   <div class="row">
+     <div class="column1">
+       <h1>TO SURF ANONYMOUSLY</h1>
+       <p>Contact us for best vpn service  in the WORLD!</p>
+       <button class="purchase" onclick="myFuction()">PURCHASE</button>
+     </div>
+   
+     
+   </div>
+   
+   
+   <!-- javascript to make side menu appear -->
+ <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+   function myFuction(){
+
+    location.replace("purchase.html")
+   }
+  
+ </script>
+   
+ 
+</body>
+</html>
